@@ -8,12 +8,12 @@ It performs the following actions:
 - Uses the `BULK INSERT` command to load data from csv Files to bronze tables.
 
 Parameters:
-None. This stored procedure does not accept any parameters or return any values.
+This stored procedure does not accept any parameters or return any values.
 
 Usage Example:
 EXEC bronze.load_bronze;
-
 */
+
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
 	DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME; 
